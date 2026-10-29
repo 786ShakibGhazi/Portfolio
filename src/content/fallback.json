@@ -1,0 +1,216 @@
+{
+  "profile": {
+    "full_name": "Sakiv",
+    "title": "Software Engineer",
+    "headline": "I build enterprise software and automate the workflows behind it.",
+    "intro": "Software Engineer at Newgen Software Technologies working with Java, Spring Boot and workflow automation using iBPS and BRMS. B.Tech in Computer Science & Engineering (CGPA 8.6).",
+    "bio": "I'm Sakiv, a Software Engineer at Newgen Software Technologies. I develop and maintain enterprise applications with Java, Spring Boot, JavaScript and SQL, and I design workflows and business rules with Newgen iBPS, Process Designer and BRMS to streamline business operations.\n\nI hold a B.Tech in Computer Science & Engineering from Jaypee University Anoopshahr (CGPA 8.6). I joined Newgen as a Software Engineer Intern in January 2025 and moved into a full-time Software Engineer role in July 2025.\n\nBeyond work, I build full-stack web projects with React, Node.js, Express and MongoDB, and I keep my problem-solving sharp by practising data structures and algorithms in Java on LeetCode and GeeksforGeeks.",
+    "roles": [
+      "Java & Spring Boot Developer",
+      "Workflow Automation Engineer",
+      "Full-Stack Web Developer",
+      "DSA Problem Solver"
+    ],
+    "stats": [
+      { "value": "8.6", "label": "B.Tech CGPA" },
+      { "value": "200+", "label": "LeetCode problems solved" },
+      { "value": "200+", "label": "GeeksforGeeks problems solved" },
+      { "value": "2", "label": "Roles at Newgen" }
+    ],
+    "focus_areas": [
+      {
+        "title": "Enterprise Java",
+        "description": "Developing and maintaining scalable, high-performance business applications with Java, Spring Boot, JavaScript and SQL."
+      },
+      {
+        "title": "Workflow Automation",
+        "description": "Designing workflows and business rules with Newgen iBPS, Process Designer and BRMS to streamline operational processes."
+      },
+      {
+        "title": "APIs & Integration",
+        "description": "Building RESTful APIs and backend utilities, and validating them with Postman for smooth system integration."
+      },
+      {
+        "title": "Full-Stack Web",
+        "description": "React, Node.js, Express and MongoDB projects, including Stripe payment integration."
+      },
+      {
+        "title": "Quality & Collaboration",
+        "description": "Debugging, manual testing and API validation alongside delivery, working closely with development and business teams across the SDLC."
+      }
+    ],
+    "email": "Sakivgazi2001@gmail.com",
+    "phone": "+91 7037794351",
+    "location": null,
+    "resume_path": null,
+    "avatar_path": null
+  },
+  "social_links": [],
+  "skill_categories": [
+    {
+      "id": "cat-languages",
+      "name": "Programming Languages",
+      "icon": "code",
+      "skills": ["Java", "C", "C++", "SQL", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": "cat-frontend",
+      "name": "Frontend & Web",
+      "icon": "layout",
+      "skills": ["React.js", "Redux", "Next.js", "Tailwind CSS", "Bootstrap", "WordPress"]
+    },
+    {
+      "id": "cat-backend",
+      "name": "Backend & APIs",
+      "icon": "server",
+      "skills": ["Spring Boot", "Node.js", "Express.js", "RESTful APIs", "Stripe API"]
+    },
+    {
+      "id": "cat-databases",
+      "name": "Databases",
+      "icon": "database",
+      "skills": ["MongoDB", "MySQL"]
+    },
+    {
+      "id": "cat-newgen",
+      "name": "Newgen Platform",
+      "icon": "workflow",
+      "skills": ["Newgen ONE", "iBPS", "Process Designer", "Workflow Automation", "BRMS", "Report Design"]
+    },
+    {
+      "id": "cat-tools",
+      "name": "Developer Tools",
+      "icon": "wrench",
+      "skills": ["VS Code", "Git", "GitHub", "Google Cloud Platform", "Postman"]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-engineer",
+      "company": "Newgen Software Technologies",
+      "role": "Software Engineer",
+      "location": null,
+      "start_date": "2025-07-01",
+      "end_date": null,
+      "is_current": true,
+      "summary": null,
+      "highlights": [
+        "Developed and maintained enterprise applications using Java, Spring Boot, JavaScript and SQL, ensuring scalable and high-performance solutions for business clients.",
+        "Designed and implemented workflows and business rules using Newgen iBPS, Process Designer and BRMS to streamline operational processes and improve efficiency.",
+        "Built and integrated RESTful APIs, backend utilities and responsive UI components to support seamless system integration and an enhanced user experience.",
+        "Performed debugging, manual testing and API validation using Postman while ensuring application quality, performance and timely delivery of project requirements."
+      ],
+      "tech": ["Java", "Spring Boot", "JavaScript", "SQL", "Newgen iBPS", "Process Designer", "BRMS", "Postman"]
+    },
+    {
+      "id": "exp-intern",
+      "company": "Newgen Software Technologies",
+      "role": "Software Engineer Intern",
+      "location": null,
+      "start_date": "2025-01-01",
+      "end_date": "2025-06-30",
+      "is_current": false,
+      "summary": null,
+      "highlights": [
+        "Assisted in developing and maintaining enterprise applications using Java, SQL and JavaScript, supporting workflow automation and backend processes.",
+        "Worked on implementing business workflows and validating APIs using Postman to ensure smooth system integration and functionality.",
+        "Supported debugging, testing and issue resolution activities to improve application performance and user experience.",
+        "Collaborated with development and business teams while gaining hands-on experience in enterprise software solutions and SDLC practices."
+      ],
+      "tech": ["Java", "SQL", "JavaScript", "Postman"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-ecommerce",
+      "title": "E-commerce Platform",
+      "description": "A full-featured e-commerce web application where users can browse and purchase products, search by category and price, and manage profiles through login and signup pages. Includes banners for special offers, add-to-cart and remove-from-cart functionality, and secure payment processing integrated with the Stripe API.",
+      "period": "Apr 2024 – May 2025",
+      "tech": ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Stripe API", "JavaScript", "HTML", "CSS"],
+      "image_path": null,
+      "live_url": null,
+      "repo_url": null,
+      "is_featured": true
+    },
+    {
+      "id": "proj-calculators",
+      "title": "Multi-Calculator Website",
+      "description": "A dynamic calculator website featuring multiple types of calculators categorised under Business, Mathematics, Fitness & Health, and Others. Built to showcase web development and problem-solving skills with a user-friendly interface that meets diverse functional needs.",
+      "period": "Apr 2023 – May 2024",
+      "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      "image_path": null,
+      "live_url": null,
+      "repo_url": null,
+      "is_featured": false
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-btech",
+      "institution": "Jaypee University Anoopshahr",
+      "qualification": "B.Tech in Computer Science & Engineering",
+      "period": "2021 – 2025",
+      "grade_label": "CGPA",
+      "grade_value": "8.6"
+    },
+    {
+      "id": "edu-12",
+      "institution": "Suraj Mukhi Inter College Gawan",
+      "qualification": "Class 12th",
+      "period": "2021",
+      "grade_label": "Percentage",
+      "grade_value": "82.20%"
+    },
+    {
+      "id": "edu-10",
+      "institution": "Suraj Mukhi Inter College Gawan",
+      "qualification": "Class 10th",
+      "period": "2019",
+      "grade_label": "Percentage",
+      "grade_value": "82.89%"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-hackerrank-java",
+      "title": "Java (Basic) Certificate",
+      "issuer": "HackerRank",
+      "issued_on": null,
+      "credential_url": null
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-leetcode",
+      "title": "LeetCode",
+      "description": "Solved 200+ data structures and algorithms problems using Java.",
+      "metric": "200+",
+      "platform": "LeetCode",
+      "url": null
+    },
+    {
+      "id": "ach-gfg",
+      "title": "GeeksforGeeks",
+      "description": "Solved 200+ data structures and algorithms problems using Java.",
+      "metric": "200+",
+      "platform": "GeeksforGeeks",
+      "url": null
+    },
+    {
+      "id": "ach-hackerrank",
+      "title": "HackerRank Java (Basic)",
+      "description": "Certified in basic Java by HackerRank.",
+      "metric": "Certified",
+      "platform": "HackerRank",
+      "url": null
+    },
+    {
+      "id": "ach-newgen",
+      "title": "Intern to Software Engineer",
+      "description": "Joined Newgen as a Software Engineer Intern in January 2025 and moved into a full-time Software Engineer role in July 2025.",
+      "metric": null,
+      "platform": "Newgen",
+      "url": null
+    }
+  ]
+}
