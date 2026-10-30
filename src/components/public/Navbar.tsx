@@ -55,10 +55,10 @@ export function Navbar({ items, name, initial, resumeHref }: NavbarProps) {
       </a>
       <div className="container-x flex h-16 items-center justify-between">
         <a href="#home" className="group flex items-center gap-3" aria-label={`${name} – back to top`}>
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-full border border-gold-400/60 bg-ink-800 font-display text-base font-bold text-gold-200 shadow-glow-sm transition group-hover:shadow-glow">
+          <span className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gold-500 text-base font-bold text-white shadow-glow-sm transition group-hover:bg-gold-400">
             {initial}
           </span>
-          <span className="font-display text-lg tracking-widest text-parchment-50">{name}</span>
+          <span className="text-lg font-semibold tracking-tight text-parchment-50">{name}</span>
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
@@ -70,7 +70,7 @@ export function Navbar({ items, name, initial, resumeHref }: NavbarProps) {
               className="group relative px-3 py-2 text-sm text-parchment-200 transition-colors hover:text-gold-200 aria-[current=true]:text-gold-200"
             >
               {item.label}
-              <span className="absolute inset-x-3 bottom-0.5 h-px origin-left scale-x-0 bg-gradient-to-r from-gold-300 to-crimson-400 transition-transform duration-300 group-hover:scale-x-100 group-aria-[current=true]:scale-x-100" />
+              <span className="absolute inset-x-3 bottom-0.5 h-px origin-left scale-x-0 bg-gold-400 transition-transform duration-300 group-hover:scale-x-100 group-aria-[current=true]:scale-x-100" />
             </a>
           ))}
           {resumeHref && (
@@ -116,7 +116,7 @@ export function Navbar({ items, name, initial, resumeHref }: NavbarProps) {
                     href={`#${item.id}`}
                     onClick={() => setOpen(false)}
                     aria-current={active === item.id ? 'true' : undefined}
-                    className="group flex items-center justify-between rounded-lg px-3 py-3 font-display tracking-wide text-parchment-100 hover:bg-white/5 aria-[current=true]:bg-gold-500/10 aria-[current=true]:text-gold-200"
+                    className="group flex items-center justify-between rounded-lg px-3 py-3 font-medium text-parchment-100 hover:bg-white/5 aria-[current=true]:bg-gold-500/10 aria-[current=true]:text-gold-200"
                   >
                     {item.label}
                     <span className="h-1.5 w-1.5 rounded-full bg-gold-400 opacity-0 group-aria-[current=true]:opacity-100" />

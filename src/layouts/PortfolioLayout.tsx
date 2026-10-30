@@ -1,4 +1,3 @@
-import { MagicCanvas } from '@/components/background/MagicCanvas';
 import { Footer } from '@/components/public/Footer';
 import { Navbar } from '@/components/public/Navbar';
 import { ScrollProgress } from '@/components/public/ScrollProgress';
@@ -39,7 +38,6 @@ export function PortfolioLayout({ content, preview = false }: Props) {
   return (
     <div className="relative">
       {!preview && <PublicMeta content={content} />}
-      <MagicCanvas />
       <ScrollProgress />
       <Navbar items={nav} name={profile.full_name} initial={initialOf(profile.full_name)} resumeHref={resume} />
       <main id="main" className="relative z-10">

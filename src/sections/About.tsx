@@ -14,12 +14,11 @@ export function About({ content }: { content: PortfolioContent }) {
   return (
     <section id="about" className="section">
       <div className="container-x">
-        <SectionHeading eyebrow="The story so far" title="About me" />
+        <SectionHeading eyebrow="Introduction" title="About me" />
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <Reveal className="space-y-5">
             {avatar && (
-              <div className="relative mb-6 w-40 sm:w-48">
-                <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-gold-300 via-crimson-500 to-gold-600 opacity-70 blur-sm" aria-hidden />
+              <div className="mb-6 w-40 sm:w-48">
                 <img
                   src={avatar}
                   alt={`Portrait of ${profile.full_name}`}
@@ -27,7 +26,7 @@ export function About({ content }: { content: PortfolioContent }) {
                   height={192}
                   loading="lazy"
                   decoding="async"
-                  className="relative aspect-square w-full rounded-2xl border border-gold-400/40 object-cover"
+                  className="aspect-square w-full rounded-2xl border border-white/10 object-cover shadow-glow"
                 />
               </div>
             )}
@@ -77,7 +76,7 @@ export function About({ content }: { content: PortfolioContent }) {
                       <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-gold-500/30 bg-gold-500/10 text-gold-300 transition group-hover:bg-gold-500/20 group-hover:shadow-glow-sm">
                         <Icon className="h-5 w-5" aria-hidden />
                       </span>
-                      <span className="font-display text-sm text-gold-500/60" aria-hidden>
+                      <span className="text-sm font-medium text-muted/60" aria-hidden>
                         {String(i + 1).padStart(2, '0')}
                       </span>
                     </div>

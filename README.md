@@ -1,6 +1,6 @@
 # Sakiv Portfolio
 
-A responsive, wizard-inspired portfolio and content dashboard for Sakiv. The public site is built with React, Vite, TypeScript, Tailwind CSS and Motion. Supabase provides authentication, PostgreSQL content, private admin authorization, public published snapshots, storage and contact-message handling.
+A responsive portfolio and content dashboard for Sakiv. The public site is built with React, Vite, TypeScript, Tailwind CSS and Motion. Supabase provides authentication, PostgreSQL content, private admin authorization, public published snapshots, storage and contact-message handling.
 
 ## Requirements
 

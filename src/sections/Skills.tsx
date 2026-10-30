@@ -9,14 +9,13 @@ export function Skills({ categories }: { categories: SkillCategory[] }) {
     <section id="skills" className="section">
       <div className="container-x">
         <SectionHeading
-          eyebrow="The spellbook"
+          eyebrow="Expertise"
           title="Technical skills"
           description="Languages, frameworks and tools I work with day to day, grouped by where I use them."
         />
         <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [&>*]:mb-5">
           {categories.map((category, ci) => {
             const Icon = categoryIcon(category.icon);
-            const accent = ci % 3 === 1 ? 'crimson' : 'gold';
             return (
               <m.div
                 key={category.id}
@@ -28,13 +27,7 @@ export function Skills({ categories }: { categories: SkillCategory[] }) {
               >
                 <SpotlightCard className="p-6 transition duration-300 hover:border-gold-400/40">
                   <div className="mb-5 flex items-center gap-3">
-                    <span
-                      className={`flex h-11 w-11 items-center justify-center rounded-xl border ${
-                        accent === 'gold'
-                          ? 'border-gold-500/40 bg-gold-500/10 text-gold-300'
-                          : 'border-crimson-500/50 bg-crimson-600/15 text-red-300'
-                      }`}
-                    >
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-gold-500/30 bg-gold-500/10 text-gold-300">
                       <Icon className="h-5 w-5" aria-hidden />
                     </span>
                     <div>
@@ -47,8 +40,8 @@ export function Skills({ categories }: { categories: SkillCategory[] }) {
                       <m.li
                         key={skill.id}
                         variants={fadeUp}
-                        whileHover={{ y: -3, scale: 1.04 }}
-                        className="cursor-default rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm text-parchment-100 transition-colors hover:border-gold-400/60 hover:bg-gold-500/10 hover:text-gold-100"
+                        whileHover={{ y: -2 }}
+                        className="cursor-default rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm text-parchment-100 transition-colors hover:border-gold-400/50 hover:bg-gold-500/10 hover:text-gold-100"
                       >
                         {skill.name}
                       </m.li>

@@ -15,7 +15,7 @@ export function EducationSection({ education, certifications }: Props) {
     <section id="education" className="section">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Scrolls & certifications"
+          eyebrow="Background"
           title="Education"
           description="Academic background and verified certifications."
         />
@@ -49,7 +49,7 @@ export function EducationSection({ education, certifications }: Props) {
                         {item.grade_label && item.grade_value && (
                           <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 text-sm">
                             <span className="text-muted">{item.grade_label}</span>
-                            <span className="font-display font-semibold text-gold-200">{item.grade_value}</span>
+                            <span className="font-semibold text-gold-200">{item.grade_value}</span>
                           </p>
                         )}
                       </div>
@@ -63,7 +63,7 @@ export function EducationSection({ education, certifications }: Props) {
           {certifications.length > 0 && (
             <div>
               <Reveal>
-                <h3 className="mb-4 font-serif text-2xl italic text-gold-300">Certifications</h3>
+                <h3 className="mb-4 text-xl font-semibold text-parchment-50">Certifications</h3>
               </Reveal>
               <ul className="space-y-4">
                 {certifications.map((cert, i) => {

@@ -97,7 +97,7 @@ export function Projects({ projects }: { projects: Project[] }) {
     <section id="projects" className="section">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Artefacts & creations"
+          eyebrow="Selected work"
           title="Projects"
           description="Things I have designed and built end to end."
         />

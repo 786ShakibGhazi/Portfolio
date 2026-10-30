@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 
 const PALETTES = [
-  ['#7c1d1d', '#d4a634', '#1d1930'],
-  ['#2a2542', '#e0b94f', '#9b1c24'],
-  ['#0f3d3a', '#ecd07a', '#1d1930'],
-  ['#3b1d5a', '#d4a634', '#7c1d1d'],
+  ['#312e81', '#818cf8', '#0f131c'],
+  ['#1e3a8a', '#60a5fa', '#0f131c'],
+  ['#134e4a', '#5eead4', '#0f131c'],
+  ['#4c1d95', '#a78bfa', '#0f131c'],
 ];
 
 function hash(text: string): number {
@@ -23,7 +23,7 @@ export function ProjectArt({ title }: { title: string }) {
   return (
     <div
       className="relative h-full w-full overflow-hidden"
-      style={{ background: `linear-gradient(135deg, ${palette[2]} 0%, #0c0a14 60%)` }}
+      style={{ background: `linear-gradient(135deg, ${palette[2]} 0%, #0a0d14 60%)` }}
       role="img"
       aria-label={`Generated cover for ${title}`}
     >
@@ -45,12 +45,12 @@ export function ProjectArt({ title }: { title: string }) {
         }}
       />
       <div className="absolute left-4 top-3 flex gap-1.5" aria-hidden>
-        <span className="h-2.5 w-2.5 rounded-full bg-crimson-500/80" />
-        <span className="h-2.5 w-2.5 rounded-full bg-gold-400/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-red-400/70" />
+        <span className="h-2.5 w-2.5 rounded-full bg-amber-400/70" />
         <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/70" />
       </div>
       <span
-        className="absolute inset-0 flex items-center justify-center font-display text-8xl font-bold sm:text-9xl"
+        className="absolute inset-0 flex items-center justify-center text-8xl font-bold sm:text-9xl"
         style={{ color: palette[1], opacity: 0.85, textShadow: `0 0 40px ${palette[1]}66` }}
         aria-hidden
       >

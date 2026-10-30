@@ -108,7 +108,7 @@ export default function DashboardPage() {
             {SECTIONS.map((s) => (
               <li key={s.key}>
                 <Link to={s.to} className="glass group flex h-full flex-col rounded-xl p-4 transition hover:-translate-y-0.5 hover:border-gold-400/40">
-                  {counts ? <span className="font-display text-3xl text-gold-gradient">{counts[s.key] ?? 0}</span> : <Skeleton className="h-9 w-12" />}
+                  {counts ? <span className="text-3xl font-bold text-gradient">{counts[s.key] ?? 0}</span> : <Skeleton className="h-9 w-12" />}
                   <span className="mt-1 flex items-center justify-between text-sm text-parchment-100">
                     {s.label}
                     <ArrowRight className="h-4 w-4 text-muted transition group-hover:translate-x-0.5 group-hover:text-gold-300" aria-hidden />
@@ -118,7 +118,7 @@ export default function DashboardPage() {
             ))}
             <li>
               <Link to="/admin/messages" className="glass group flex h-full flex-col rounded-xl p-4 transition hover:-translate-y-0.5 hover:border-gold-400/40">
-                <span className="font-display text-3xl text-gold-gradient">{unread}</span>
+                <span className="text-3xl font-bold text-gradient">{unread}</span>
                 <span className="mt-1 flex items-center justify-between text-sm text-parchment-100">
                   <span className="inline-flex items-center gap-1.5">
                     <Inbox className="h-4 w-4" aria-hidden /> Unread

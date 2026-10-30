@@ -67,7 +67,7 @@ export function Contact({ profile, links }: { profile: Profile; links: SocialLin
     <section id="contact" className="section">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Owl post"
+          eyebrow="Contact"
           title="Get in touch"
           description="Have a role, a project or a question? Send a message and I will reply by email."
         />

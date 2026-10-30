@@ -9,7 +9,7 @@ export function Achievements({ items }: { items: Achievement[] }) {
     <section id="achievements" className="section">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Trophies & milestones"
+          eyebrow="Highlights"
           title="Achievements"
           description="Verified highlights from my coding practice and career so far."
         />
@@ -25,7 +25,7 @@ export function Achievements({ items }: { items: Achievement[] }) {
                     className="group flex h-full flex-col p-6 transition duration-300 hover:-translate-y-1.5 hover:border-gold-400/50"
                   >
                     <div className="mb-5 flex items-start justify-between">
-                      <span className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/40 bg-gradient-to-br from-gold-500/20 to-crimson-600/20 text-gold-200 transition group-hover:shadow-glow-sm">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-gold-500/30 bg-gold-500/10 text-gold-200">
                         <Icon className="h-6 w-6" aria-hidden />
                       </span>
                       {item.platform && (
@@ -33,7 +33,7 @@ export function Achievements({ items }: { items: Achievement[] }) {
                       )}
                     </div>
                     {item.metric && (
-                      <p className="font-display text-4xl font-bold text-gold-gradient">{item.metric}</p>
+                      <p className="text-4xl font-bold text-gradient">{item.metric}</p>
                     )}
                     <h3 className={`font-semibold ${item.metric ? 'mt-1 text-base' : 'text-lg'}`}>{item.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>

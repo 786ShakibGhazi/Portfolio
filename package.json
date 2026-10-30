@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Animated, wizard-themed developer portfolio with a Supabase-backed admin dashboard.",
+  "description": "Modern developer portfolio with a Supabase-backed admin dashboard.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -14,8 +14,6 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.1.0",
-    "@fontsource/cinzel": "^5.1.0",
-    "@fontsource/cormorant-garamond": "^5.1.0",
     "@supabase/supabase-js": "^2.45.0",
     "framer-motion": "^11.15.0",
     "lucide-react": "^0.469.0",

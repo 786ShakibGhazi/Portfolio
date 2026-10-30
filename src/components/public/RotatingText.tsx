@@ -21,7 +21,7 @@ export function RotatingText({ words }: { words: string[] }) {
         <m.span
           key={current}
           aria-hidden
-          className="inline-block font-display text-xl not-italic tracking-wide text-gold-gradient sm:text-2xl"
+          className="inline-block font-semibold not-italic text-gold-300 sm:text-2xl"
           initial={{ y: '55%', opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: '-55%', opacity: 0 }}

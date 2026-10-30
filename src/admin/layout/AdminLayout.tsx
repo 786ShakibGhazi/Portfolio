@@ -98,9 +98,9 @@ export function AdminLayout() {
     <div className="min-h-screen lg:grid lg:grid-cols-[260px_1fr]">
       <aside className="glass-strong sticky top-0 hidden h-screen flex-col border-y-0 border-l-0 lg:flex">
         <div className="flex items-center gap-3 border-b border-white/10 px-5 py-5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold-400/60 bg-ink-800 font-display font-bold text-gold-200">S</span>
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gold-500 font-bold text-white">S</span>
           <div>
-            <p className="font-display text-sm tracking-widest">Portfolio CMS</p>
+            <p className="text-sm font-semibold">Portfolio CMS</p>
             <p className="max-w-[170px] truncate text-xs text-muted">{session?.user.email}</p>
           </div>
         </div>
@@ -166,7 +166,7 @@ export function AdminLayout() {
               aria-label="Navigation"
             >
               <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
-                <p className="font-display text-sm tracking-widest">Portfolio CMS</p>
+                <p className="text-sm font-semibold">Portfolio CMS</p>
                 <button type="button" className="btn-icon" aria-label="Close navigation" onClick={() => setDrawer(false)}>
                   <X className="h-4 w-4" />
                 </button>

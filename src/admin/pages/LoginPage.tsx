@@ -1,7 +1,6 @@
 import { useState, type FormEvent, type ReactNode } from 'react';
 import { AlertCircle, ArrowLeft, CheckCircle2, Loader2, LogIn, ShieldAlert } from 'lucide-react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
-import { FloatingCandles } from '@/components/background/FloatingCandles';
 import { useDocumentMeta } from '@/hooks/useDocumentMeta';
 import { toMessage } from '@/lib/errors';
 import { useAuth } from '../AuthContext';
@@ -12,11 +11,10 @@ function Shell({ title, subtitle, children }: { title: string; subtitle: string;
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-12">
       <div className="bg-grid absolute inset-0" aria-hidden />
-      <FloatingCandles />
       <div className="glass-strong relative z-10 w-full max-w-md rounded-2xl p-7 shadow-2xl sm:p-9">
         <div className="mb-7 text-center">
-          <span className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/60 bg-ink-800 font-display text-xl font-bold text-gold-200 shadow-glow-sm">S</span>
-          <h1 className="text-2xl">{title}</h1>
+          <span className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500 text-xl font-bold text-white shadow-glow-sm">S</span>
+          <h1 className="text-2xl font-bold">{title}</h1>
           <p className="mt-2 text-sm text-muted">{subtitle}</p>
         </div>
         {children}

@@ -265,7 +265,7 @@ export function FormField({ def, values, error, onChange, idPrefix }: FieldProps
   if (def.type === 'section') {
     return (
       <div className="col-span-full border-b border-white/10 pb-2 pt-4 first:pt-0">
-        <h3 className="font-display text-sm uppercase tracking-[0.18em] text-gold-300">{def.label}</h3>
+        <h3 className="text-sm font-semibold uppercase tracking-widest text-gold-300">{def.label}</h3>
         {def.help && <p className="mt-1 text-sm text-muted">{def.help}</p>}
       </div>
     );

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { m, useScroll, useSpring } from 'framer-motion';
-import { CalendarDays, MapPin, Sparkles } from 'lucide-react';
+import { CalendarDays, Check, MapPin } from 'lucide-react';
 import { Reveal, SectionHeading, SpotlightCard } from '@/components/ui/primitives';
 import { formatDuration, formatRange } from '@/lib/format';
 import type { Experience as ExperienceType } from '@/types/content';
@@ -14,7 +14,7 @@ export function Experience({ items }: { items: ExperienceType[] }) {
     <section id="experience" className="section">
       <div className="container-x">
         <SectionHeading
-          eyebrow="The chronicles"
+          eyebrow="Career"
           title="Professional experience"
           description="Where I have been building and shipping enterprise software."
         />
@@ -22,7 +22,7 @@ export function Experience({ items }: { items: ExperienceType[] }) {
         <div ref={ref} className="relative pl-9 sm:pl-12">
           <div className="absolute bottom-2 left-[11px] top-2 w-px bg-white/10 sm:left-[15px]" aria-hidden />
           <m.div
-            className="absolute bottom-2 left-[11px] top-2 w-px origin-top bg-gradient-to-b from-gold-300 via-gold-500 to-crimson-500 sm:left-[15px]"
+            className="absolute bottom-2 left-[11px] top-2 w-px origin-top bg-gradient-to-b from-gold-300 via-gold-500 to-gold-600 sm:left-[15px]"
             style={{ scaleY }}
             aria-hidden
           />
@@ -50,7 +50,7 @@ export function Experience({ items }: { items: ExperienceType[] }) {
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                       <div>
                         <h3 className="text-xl font-semibold sm:text-2xl">{exp.role}</h3>
-                        <p className="mt-1 font-serif text-xl italic text-gold-300">{exp.company}</p>
+                        <p className="mt-1 text-lg font-medium text-gold-300">{exp.company}</p>
                         {exp.location && (
                           <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">
                             <MapPin className="h-3.5 w-3.5" aria-hidden /> {exp.location}
@@ -75,7 +75,7 @@ export function Experience({ items }: { items: ExperienceType[] }) {
                       <ul className="mt-5 space-y-3">
                         {exp.highlights.map((item, hi) => (
                           <li key={hi} className="flex gap-3 text-sm leading-relaxed text-muted sm:text-base">
-                            <Sparkles className="mt-1 h-4 w-4 shrink-0 text-gold-400" aria-hidden />
+                            <Check className="mt-1 h-4 w-4 shrink-0 text-gold-400" aria-hidden />
                             <span>{item}</span>
                           </li>
                         ))}
